@@ -19,7 +19,7 @@ public class KafkaProducer {
 
     public void sendMessage(String message){
 
-        LOGGER.info(String.format("Message  ->> %s", message));
+        LOGGER.info(String.format("Message From Browser ->> %s", message));
         kafkaTemplate.send("kafkaTopics", message);
     }
 }
