@@ -10,7 +10,7 @@ public class KafkaTopicConfig {
 
     @Bean
     public NewTopic kafkaGuides(){
-        return TopicBuilder.name("kafkaguides") //topic name
+        return TopicBuilder.name("kafkaTopics") //topic name
              //   .partitions(10) for 10 partitions
                 .build();
     }
